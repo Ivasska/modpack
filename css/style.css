@@ -139,14 +139,24 @@ a {
 
 .gallery__content {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	gap: 40px;
 	padding: 40px;
 	margin: 0 auto;
 }
 
+.gallery__content-item {
+	/* overflow: hidden; */
+}
+
+.gallery__content-item:hover .gallery-img {
+	transform: scale(1.1);
+}
+
 .gallery-img {
 	width: 100%;
+	transition: transform .25s;
+	cursor: pointer;
 }
 
 .gallery__title {
